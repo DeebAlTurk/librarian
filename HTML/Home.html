@@ -60,7 +60,9 @@
             width: 35px !important;
 
         }
-        .carousel-item>.card-columns>.card:hover{
+        #catg-Carousel .carousel-item>.card-columns>.card{
+        }
+        #catg-Carousel .carousel-item>.card-columns>.card:hover{
             color: #BF94E4;
             transform: skewX(2deg);
         }
@@ -118,7 +120,7 @@
     <ul class="navbar-nav mr-auto ">
         <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="">categories</a></li>
-        <li class="nav-item"><a class="nav-link" href="">My Books</a></li>
+        <li class="nav-item"><a class="nav-link" href="">Liked Books</a></li>
 
         <li class="nav-item dropdown btn-group" id="dropdownMenu-in-nav">
             <span class="nav-link dropdown-toggle" style="cursor: pointer"  id="navbardrop" data-toggle="dropdown" >
@@ -151,7 +153,7 @@
 <!--        <li data-target="#highlight-book-slider" data-slide-to="1"></li>-->
 <!--        <li data-target="#highlight-book-slider" data-slide-to="2"></li>-->
 <!--    </ul>-->
-    <div class="carousel-inner text-center">
+    <div class="carousel-inner text-center" id="catg-Carousel">
         <div class="carousel-item active">
             <div class="card-columns ml-2">
                 <div class="card bg-danger m-2" >
@@ -206,7 +208,7 @@
                 <div class="card bg-dark  m-2">
                     <img class="card-img-bottom w-50 " src="../resources/icons/programing.svg" alt="Computer Science">
                     <h4 class="card-title ">Computer Science</h4>
-                    <a href="#" class="stretched-link"></a>
+                    <a href="#" class="stretched-link" data-toggle="tooltip" title="sudo cd /root/CS" ></a>
                 </div>
             </div>
         </div>
@@ -217,6 +219,7 @@
     <span class="carousel-control-next-icon"></span>
 </a>
 </div>
+<div class="container-lg"></div>
 
 <footer>
     <div class="container-fluid mt-2">
