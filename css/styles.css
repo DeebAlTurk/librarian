@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+html, body {
+    margin: 0;
+    height: 100%;
+}
+#login-page{
+    /*background:linear-gradient(45deg, #2F1C53, #A46DFF, #F6D1FD);*/
+    background-image: url("../resources/log-bg.jpg");
+    background-size: 130%;
+    background-repeat: no-repeat;
+
+}
+.logo{
+    display: inline;
+}
+.logo>#logo-login-pc{
+    display: inline;
+    width:25%;
+    margin: 0 0 20px 0;
+    padding-bottom: 20px;
+    border-bottom: #6f42c1 1px inset;
+}
+#logo-login-mobile{
+    display: none;
+}
+.log-box{
+    text-align: center;
+    position: relative;
+    top: 125px;
+}
+.log-form{
+    display: block;
+    margin: 0 auto;
+    width: 26%;
+}
+
+.form-items{
+    display: block;
+    margin: 20px 0 !important;
+    padding:0;
+    width: 100%;
+}
+.form-items>input , .form-items>span{
+    width: 100%;
+    margin: 0 !important;
+    outline: none;
+}
+.form-items>input:hover , .form-items>button:hover{
+    box-shadow: rgba(0, 0, 0, 0.55) 1px 1px 15px 10px;
+}
+.form-items>button{
+    margin: 0 !important;
+    padding: 6px 12px;
+    outline: none;
+}
+@media screen and (max-width: 1200px){
+.form-items>input{
+        font-size: 150%!important;
+    }
+.form-items>input , .form-items>span{
+        width: 100%;
+        padding: 25px;
+    }
+.log-form{
+        width: 60%;
+    }
+    #login-page{
+        font-size: 200%;
+    }
+    #login-page{
+        background-image: url("../resources/mobile/mobile-login-bg.jpg");
+        background-position: center;
+        background-size: 200%;
+        backdrop-filter: blur(5px);
+    }
+.logo>#logo-login-pc{
+        display: none;
+    }
+    #logo-login-mobile{
+        display: inline;
+        width:85%;
+        margin: 0 0 20px 0;
+        padding-bottom: 20px;
+        border-bottom: white 1px inset;
+    }
+    #log-login-btn,#log-signup-btn,#log-resetPassword{
+        padding: 20px;
+        font-size: 125%;
+    }
+    #log-form-forgotPass{
+        margin-top: 200px;
+    }
+
+}

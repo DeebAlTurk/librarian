@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../bootstrap-4.5.3-dist/css/bootstrap.css">
+    <script src="../bootstrap-4.5.3-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        #home{
+            background-color: #1b1e21;
+        }
+
+        #search{
+            outline: none;
+            height: 72%;
+            width: 40%;
+            text-align: left;
+        }
+        #home-account-drop-down{
+            background-color:#292b2c;
+
+        }
+        #home-account-drop-down>.dropdown-item:hover{
+            background-color: #2b2d2f;
+        }
+        #dark-mode-btn:hover{
+            background-color: #2b2d2f !important;
+        }
+        #header{
+            border-bottom: #734F96 1px solid ;
+        }
+        @media screen and (max-width: 1200px){
+            #search{
+                height:100%;
+                width: 50%;
+            }
+            #header-search{
+                margin-top: 200px !important;
+            }
+        }
+        #home
+    </style>
+</head>
+<body id="home" >
+<div class="container-fluid mt-2 position-fixed">
+    <div class="row pb-3" id="header">
+        <div class="col-lg-2" id="header-logo"><a href="Homev0.html">
+            <img class="img-fluid" src="../resources/librarian-logo/vector/default-monochrome-white.svg" alt="librarian"></a>
+        </div>
+        <div class="col-lg-8" id="header-search">
+            <button class="btn float-right mt-2 "><img src="../resources/icons/search.svg" width="20"></button>
+            <input type="search" class="input-group-text mt-2  rounded-pill float-right" id="search" placeholder="Search">
+        </div>
+        <div class="col-lg-2" >
+            <button type="button" id="dark-mode-btn" class="btn bg-transparent mt-2 rounded-pill"><img width="25px" class="img-fluid" src="../resources/icons/night-mode.svg" alt="dark mode"></button>
+            <div class="btn-group mt-2 float-right">
+                <button type="button" class="btn btn-dark">My Account</button>
+                <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split " data-toggle="dropdown">
+                    <span class="caret"></span>
+                </button>
+                <div class="dropdown-menu  " id="home-account-drop-down">
+                    <a class="dropdown-item text-white-50" href="#">upload a book</a>
+                    <a class="dropdown-item text-white-50" href="#">logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

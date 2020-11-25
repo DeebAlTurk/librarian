@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="../resources/book.svg">
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../bootstrap-4.5.3-dist/css/bootstrap.css">
+    <script>
+        window.addEventListener("load", start,false);
+        var usrname;
+        var email;
+        var password;
+        var confPassword;
+        var login;
+        var signup;
+        function start() {
+            usrname=document.getElementsByClassName("username-input").item(0);
+            email=document.getElementsByClassName("email-input").item(0);
+            password=document.getElementsByClassName("password-input").item(0);
+            confPassword=document.getElementsByClassName("password-input").item(1);
+            login=document.getElementsByClassName("login-btn").item(0);
+            signup=document.getElementsByClassName("signup-btn").item(0);
+        }
+    </script>
+</head>
+<body id="login-page">
+<div class="main-wrapper">
+        <div class="log-box">
+            <div class="logo">
+                <img id="logo-login-pc" src="../resources\librarian-logo\vector\default-monochrome.svg" alt="Librarian">
+                <img id="logo-login-mobile" src="../resources\librarian-logo\vector\default-monochrome-white.svg" alt="Librarian">
+            </div>
+            <form action="" method="post">
+                <div class="log-form">
+                    <div class="form-items"><input required type="text" class="username-input rounded-pill  input-group-text" placeholder="User name"></div>
+                    <div class="form-items"><input required type="email" class="email-input rounded-pill  input-group-text" placeholder="Email"></div>
+                    <div class="form-items"><input required type="password" class="password-input rounded-pill  input-group-text" placeholder="Password"></div>
+                    <div class="form-items"><input required type="password" class="password-input rounded-pill  input-group-text" placeholder="Confirm Password"></div>
+                    <div class="form-items"><button id="log-signup-btn" class="signup-btn btn-success w-100 rounded-pill m-1" type="submit">Sign Up</button></div>
+                    <div class="form-items"><button class="login-btn btn-secondary w-100 rounded-pill m-1 " type="button">Login </button></div>
+                </div>
+            </form>
+
+        </div>
+</div>
+</body>
+</html>
