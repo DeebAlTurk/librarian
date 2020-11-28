@@ -8,110 +8,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="icon" type="image/png" href="../resources/book.svg">
+    <link rel="stylesheet" href="../css/styles.css">
     <style>
-        .carousel-control-next , .carousel-control-prev{
-            width: 5% !important;
-        }
-        #header{
-            border-bottom: #734F96 2px solid;
-        }
-        footer{
-            margin-top: 100px !important;
-            background-color: #1b1e21;
-            border-top: #734F96 2px solid ;
-        }
-        #home{
-            background-color: #1b1e21;
-            color: whitesmoke;
-        }
-        #home>#header{
-            background-color: #1b1e21 !important;
-            font-size: 120%;
-        }
-        #home>#header a:hover ,#navbardrop:hover{
-            color: #BF94E4;
-        }
-       #header .dropdown-menu{
-            background-color: #292b2c;
-        }
-        #header .dropdown-menu>a{
-            color: rgba(255, 255, 255, 0.8);
-        }
-        #header .dropdown-menu>a:hover{
-            color: black !important;
-            background-color: #DDA0DD!important;
-        }
-        #home>#header .active{
-            color: #6f42c1 !important;
-        }
-        #search>button , #mobile-search-btn{
-            color: #DDA0DD;
-            border-color: #DDA0DD;
-            border-width: 2px;
-
-        }
-        #search>button:hover ,#mobile-search-btn:hover{
-            color: black;
-            background-color: #DDA0DD;
-            border-width: 3px;
-
-        }
-        .social-icons img {
-            width: 35px !important;
-
-        }
-        #catg-Carousel .carousel-item>.card-columns>.card{
-        }
-        #catg-Carousel .carousel-item>.card-columns>.card:hover{
-            color: #BF94E4;
-            transform: skewX(2deg);
-        }
-        #highlight-book-slider{
-            border-bottom: 2px #734F96 solid;
-        }
-
-        @media screen and (max-width: 1200px) {
-            .social-icons img {
-                width: 100px !important;
-            }
-
-            footer span{
-                margin-top: 50px !important;
-            }
-            /*.mobile-social-icons img{*/
-            /*    width: 60px !important;*/
-            /*}*/
-            #header .dropdown-menu{
-                font-size: 200%;
-            }
-           #home{
-               font-size: 250%;
-           }
-            #dropdownMenu-in-nav{
-                font-size: 50%;
-            }
-           input::placeholder{
-               font-size: 150%;
-           }
-           #home>#header li:nth-child(even){
-               border-bottom:#FBAED2 thin solid ;
-               border-top:#FBAED2 thin solid ;
-           }
-            #home>#header li:last-child{
-                border-bottom:none;
-            }
-            #header a>img{
-                width: 500px !important;
-            }
-            #header span{
-                font-size: 200% !important;
-            }
-
-            #navbardrop{
-                cursor: pointer;
-            }
-       }
-    </style>
+</style>
 </head>
 <body id="home">
 <nav class="navbar navbar-expand-lg navbar-dark pb-2 sticky-top" id="header">
@@ -237,32 +136,14 @@
                         <div class="card bg-danger text-center">
                             <img class="card-img" src="../resources/icons/love.svg" width="250px" height="250px">
                             <div class="card-body text-center">
-                                <a href="#" class="btn btn-primary"><span class="card-text">Preview</span></a>
+                                <a href="#" class="btn btn-primary"><span class="card-text stretched-link">Preview</span></a>
                                 <a href="#" class="btn bg-info"><span class="card-text">UserName</span></a>
                             </div>
                         </div>
                         <div class="card bg-danger text-center">
                             <img class="card-img" src="../resources/icons/love.svg" width="250px" height="250px">
                             <div class="card-body text-center">
-                                <a href="#" class="btn btn-primary"><span class="card-text">Preview</span></a>
-                                <a href="#" class="btn bg-info"><span class="card-text">UserName</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card-deck">
-                        <div class="card bg-danger text-center">
-                            <img class="card-img" src="../resources/icons/love.svg" width="250px" height="250px">
-                            <div class="card-body text-center">
-                                <a href="#" class="btn btn-primary"><span class="card-text">Preview</span></a>
-                                <a href="#" class="btn bg-info"><span class="card-text">UserName</span></a>
-                            </div>
-                        </div>
-                        <div class="card bg-danger text-center">
-                            <img class="card-img" src="../resources/icons/love.svg" width="250px" height="250px">
-                            <div class="card-body text-center">
-                                <a href="#" class="btn btn-primary"><span class="card-text">Preview</span></a>
+                                <a href="#" class="btn btn-primary"><span class="card-text stretched-link">Preview</span></a>
                                 <a href="#" class="btn bg-info"><span class="card-text">UserName</span></a>
                             </div>
                         </div>
@@ -273,14 +154,32 @@
                         <div class="card bg-danger text-center">
                             <img class="card-img" src="../resources/icons/love.svg" width="250px" height="250px">
                             <div class="card-body text-center">
-                                <a href="#" class="btn btn-primary"><span class="card-text">Preview</span></a>
+                                <a href="#" class="btn btn-primary"><span class="card-text stretched-link">Preview</span></a>
                                 <a href="#" class="btn bg-info"><span class="card-text">UserName</span></a>
                             </div>
                         </div>
                         <div class="card bg-danger text-center">
                             <img class="card-img" src="../resources/icons/love.svg" width="250px" height="250px">
                             <div class="card-body text-center">
-                                <a href="#" class="btn btn-primary"><span class="card-text">Preview</span></a>
+                                <a href="#" class="btn btn-primary"><span class="card-text stretched-link">Preview</span></a>
+                                <a href="#" class="btn bg-info"><span class="card-text">UserName</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card-deck">
+                        <div class="card bg-danger text-center">
+                            <img class="card-img" src="../resources/icons/love.svg" width="250px" height="250px">
+                            <div class="card-body text-center">
+                                <a href="#" class="btn btn-primary"><span class="card-text stretched-link">Preview</span></a>
+                                <a href="#" class="btn bg-info"><span class="card-text">UserName</span></a>
+                            </div>
+                        </div>
+                        <div class="card bg-danger text-center">
+                            <img class="card-img" src="../resources/icons/love.svg" width="250px" height="250px">
+                            <div class="card-body text-center">
+                                <a href="#" class="btn btn-primary"><span class="card-text stretched-link">Preview</span></a>
                                 <a href="#" class="btn bg-info"><span class="card-text">UserName</span></a>
                             </div>
                         </div>
@@ -299,7 +198,237 @@
         </div>
     </div>
 </div>
+<div class="container-fluid mt-5">
+    <div class="row">
+        <div class="col">
+            <span class="text-right display-4">Mystery</span>
+        </div>
+    </div>
+    <div class="row ml-lg-5">
+        <div class="col">
+            <div id="mystery-carousel" class="carousel slide mt-4" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card-deck">
+                            <div class="card bg-info text-center">
+                                <img class="card-img" src="../resources/icons/detective-story.svg" width="250px" height="250px">
+                                <div class="card-body text-center">
+                                    <a href="#" class="btn btn-primary"><span class="card-text stretched-link">Preview</span></a>
+                                    <a href="#" class="btn bg-info"><span class="card-text">UserName</span></a>
+                                </div>
+                            </div>
+                            <div class="card bg-info text-center">
+                                <img class="card-img" src="../resources/icons/detective-story.svg" width="250px" height="250px">
+                                <div class="card-body text-center">
+                                    <a href="#" class="btn btn-primary"><span class="card-text stretched-link">Preview</span></a>
+                                    <a href="#" class="btn bg-info"><span class="card-text">UserName</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card-deck">
+                            <div class="card bg-info text-center">
+                                <img class="card-img" src="../resources/icons/detective-story.svg" width="250px" height="250px">
+                                <div class="card-body text-center">
+                                    <a href="#" class="btn btn-primary"><span class="card-text stretched-link">Preview</span></a>
+                                    <a href="#" class="btn bg-info"><span class="card-text">UserName</span></a>
+                                </div>
+                            </div>
+                            <div class="card bg-info text-center">
+                                <img class="card-img" src="../resources/icons/detective-story.svg" width="250px" height="250px">
+                                <div class="card-body text-center">
+                                    <a href="#" class="btn btn-primary"><span class="card-text stretched-link">Preview</span></a>
+                                    <a href="#" class="btn bg-info"><span class="card-text">UserName</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card-deck">
+                            <div class="card bg-info text-center">
+                                <img class="card-img" src="../resources/icons/detective-story.svg" width="250px" height="250px">
+                                <div class="card-body text-center">
+                                    <a href="#" class="btn btn-primary"><span class="card-text stretched-link">Preview</span></a>
+                                    <a href="#" class="btn bg-info"><span class="card-text">UserName</span></a>
+                                </div>
+                            </div>
+                            <div class="card bg-info text-center">
+                                <img class="card-img" src="../resources/icons/detective-story.svg" width="250px" height="250px">
+                                <div class="card-body text-center">
+                                    <a href="#" class="btn btn-primary"><span class="card-text stretched-link">Preview</span></a>
+                                    <a href="#" class="btn bg-info"><span class="card-text">UserName</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <a class="carousel-control-prev" href="#mystery-carousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#mystery-carousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid mt-5">
+    <div class="row">
+        <div class="col">
+            <span class="text-right display-4">Health</span>
+        </div>
+    </div>
+    <div class="row ml-lg-5">
+        <div class="col">
+            <div id="health-carousel" class="carousel slide mt-4" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card-deck">
+                            <div class="card bg-white text-center">
+                                <img class="card-img" src="../resources/icons/cardiogram.svg" width="250px" height="250px">
+                                <div class="card-body text-center">
+                                    <a href="#" class="btn btn-primary"><span class="card-text stretched-link">Preview</span></a>
+                                    <a href="#" class="btn bg-white"><span class="card-text">UserName</span></a>
+                                </div>
+                            </div>
+                            <div class="card bg-white text-center">
+                                <img class="card-img" src="../resources/icons/cardiogram.svg" width="250px" height="250px">
+                                <div class="card-body text-center">
+                                    <a href="#" class="btn btn-primary"><span class="card-text stretched-link">Preview</span></a>
+                                    <a href="#" class="btn bg-white"><span class="card-text">UserName</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card-deck">
+                            <div class="card bg-white text-center">
+                                <img class="card-img" src="../resources/icons/cardiogram.svg" width="250px" height="250px">
+                                <div class="card-body text-center">
+                                    <a href="#" class="btn btn-primary"><span class="card-text stretched-link">Preview</span></a>
+                                    <a href="#" class="btn bg-white"><span class="card-text">UserName</span></a>
+                                </div>
+                            </div>
+                            <div class="card bg-white text-center">
+                                <img class="card-img" src="../resources/icons/cardiogram.svg" width="250px" height="250px">
+                                <div class="card-body text-center">
+                                    <a href="#" class="btn btn-primary"><span class="card-text stretched-link">Preview</span></a>
+                                    <a href="#" class="btn bg-white"><span class="card-text">UserName</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card-deck">
+                            <div class="card bg-white text-center">
+                                <img class="card-img" src="../resources/icons/cardiogram.svg" width="250px" height="250px">
+                                <div class="card-body text-center">
+                                    <a href="#" class="btn btn-primary"><span class="card-text stretched-link">Preview</span></a>
+                                    <a href="#" class="btn bg-white"><span class="card-text">UserName</span></a>
+                                </div>
+                            </div>
+                            <div class="card bg-white text-center">
+                                <img class="card-img" src="../resources/icons/cardiogram.svg" width="250px" height="250px">
+                                <div class="card-body text-center">
+                                    <a href="#" class="btn btn-primary"><span class="card-text stretched-link">Preview</span></a>
+                                    <a href="#" class="btn bg-white"><span class="card-text">UserName</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#health-carousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#health-carousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid mt-5">
+    <div class="row">
+        <div class="col">
+            <span class="text-right display-4">Drama</span>
+        </div>
+    </div>
+    <div class="row ml-lg-5">
+        <div class="col">
+            <div id="drama-carousel" class="carousel slide mt-4" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card-deck">
+                            <div class="card bg-warning text-center">
+                                <img class="card-img" src="../resources/icons/shakespeare.svg" width="250px" height="250px">
+                                <div class="card-body text-center">
+                                    <a href="#" class="btn btn-primary"><span class="card-text stretched-link">Preview</span></a>
+                                    <a href="#" class="btn bg-warning"><span class="card-text">UserName</span></a>
+                                </div>
+                            </div>
+                            <div class="card bg-warning text-center">
+                                <img class="card-img" src="../resources/icons/shakespeare.svg" width="250px" height="250px">
+                                <div class="card-body text-center">
+                                    <a href="#" class="btn btn-primary"><span class="card-text stretched-link">Preview</span></a>
+                                    <a href="#" class="btn bg-warning"><span class="card-text">UserName</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card-deck">
+                            <div class="card bg-warning text-center">
+                                <img class="card-img" src="../resources/icons/shakespeare.svg" width="250px" height="250px">
+                                <div class="card-body text-center">
+                                    <a href="#" class="btn btn-primary"><span class="card-text stretched-link">Preview</span></a>
+                                    <a href="#" class="btn bg-warning"><span class="card-text">UserName</span></a>
+                                </div>
+                            </div>
+                            <div class="card bg-warning text-center">
+                                <img class="card-img" src="../resources/icons/shakespeare.svg" width="250px" height="250px">
+                                <div class="card-body text-center">
+                                    <a href="#" class="btn btn-primary"><span class="card-text stretched-link">Preview</span></a>
+                                    <a href="#" class="btn bg-warning"><span class="card-text">UserName</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card-deck">
+                            <div class="card bg-warning text-center">
+                                <img class="card-img" src="../resources/icons/shakespeare.svg" width="250px" height="250px">
+                                <div class="card-body text-center">
+                                    <a href="#" class="btn btn-primary"><span class="card-text stretched-link">Preview</span></a>
+                                    <a href="#" class="btn bg-warning"><span class="card-text">UserName</span></a>
+                                </div>
+                            </div>
+                            <div class="card bg-warning text-center">
+                                <img class="card-img" src="../resources/icons/shakespeare.svg" width="250px" height="250px">
+                                <div class="card-body text-center">
+                                    <a href="#" class="btn btn-primary"><span class="card-text stretched-link">Preview</span></a>
+                                    <a href="#" class="btn bg-warning"><span class="card-text">UserName</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#drama-carousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#drama-carousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div>
 <footer>
     <div class="container-fluid mt-2">
         <div class="row">

@@ -93,3 +93,105 @@ html, body {
     }
 
 }
+.carousel-control-next , .carousel-control-prev{
+    width: 5% !important;
+}
+#header{
+    border-bottom: #734F96 2px solid;
+}
+footer{
+    margin-top: 100px !important;
+    background-color: #1b1e21;
+    border-top: #734F96 2px solid ;
+}
+body{
+    background-color: #1b1e21;
+    color: whitesmoke;
+}
+body>#header{
+    background-color: #1b1e21 !important;
+    font-size: 120%;
+}
+body>#header a:hover ,#navbardrop:hover{
+    color: #BF94E4;
+}
+#header .dropdown-menu{
+    background-color: #292b2c;
+}
+#header .dropdown-menu>a{
+    color: rgba(255, 255, 255, 0.8);
+}
+#header .dropdown-menu>a:hover{
+    color: black !important;
+    background-color: #DDA0DD!important;
+}
+#header .active{
+    color: #6f42c1 !important;
+}
+#search>button , #mobile-search-btn{
+    color: #DDA0DD;
+    border-color: #DDA0DD;
+    border-width: 2px;
+
+}
+#search>button:hover ,#mobile-search-btn:hover{
+    color: black;
+    background-color: #DDA0DD;
+    border-width: 3px;
+
+}
+.social-icons img {
+    width: 35px !important;
+
+}
+#catg-Carousel .carousel-item>.card-columns>.card{
+}
+#catg-Carousel .carousel-item>.card-columns>.card:hover{
+    color: #BF94E4;
+    transform: skewX(2deg);
+}
+#highlight-book-slider{
+    border-bottom: 2px #734F96 solid;
+}
+
+@media screen and (max-width: 1200px) {
+    .social-icons img {
+        width: 100px !important;
+    }
+
+    footer span{
+        margin-top: 50px !important;
+    }
+    /*.mobile-social-icons img{*/
+    /*    width: 60px !important;*/
+    /*}*/
+    #header .dropdown-menu{
+        font-size: 200%;
+    }
+    body{
+        font-size: 250%;
+    }
+    #dropdownMenu-in-nav{
+        font-size: 50%;
+    }
+    input::placeholder{
+        font-size: 150%;
+    }
+    #header li:nth-child(even){
+        border-bottom:#FBAED2 thin solid ;
+        border-top:#FBAED2 thin solid ;
+    }
+    #header li:last-child{
+        border-bottom:none;
+    }
+    #header a>img{
+        width: 500px !important;
+    }
+    #header span{
+        font-size: 200% !important;
+    }
+
+    #navbardrop{
+        cursor: pointer;
+    }
+}
