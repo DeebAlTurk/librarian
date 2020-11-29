@@ -2,15 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Search</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="icon" type="image/png" href="../resources/book.svg">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Upload</title>
+    <style>
+        #search-page .list-group a{
+            color: #EE82EE !important;
+        }
+        #search-page .list-group a:hover{
+            color: #734F96 !important;
+        }
+        #search-page .list-group-item-dark:hover a{
+            color: #734F96 !important;
+        }
+        #search-page .list-group-item-dark:nth-child(n){
+            color: lightgray;
+            background-color: #8459ab;
+        }
+        #search-page .list-group-item-dark:nth-child(n):hover{
+            color: black;
+            background-color: #DDA0DD;
+        }
+
+    </style>
 </head>
-<body>
+<body id="search-page">
 <nav class="navbar navbar-expand-lg navbar-dark pb-2 sticky-top" id="header">
     <a href="Home.html" class="navbar-brand pl-2"><img class="img-fluid" src="../resources/librarian-logo/png/default-monochrome-white.png" width="200px"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -18,25 +38,24 @@
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav mr-auto ">
-            <li class="nav-item"><a class="nav-link " href="Home.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link " href="Categories.html">categories</a></li>
+            <li class="nav-item"><a class="nav-link active" href="Home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="Categories.html">categories</a></li>
             <li class="nav-item"><a class="nav-link" href="liked.html">Liked Books</a></li>
 
-            <li class="nav-item dropdown btn-group active" id="dropdownMenu-in-nav">
+            <li class="nav-item dropdown btn-group" id="dropdownMenu-in-nav">
             <span class="nav-link dropdown-toggle" style="cursor: pointer"  id="navbardrop" data-toggle="dropdown" >
                 My Account
             </span>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="Profile.html">My Account</a>
-                    <a class="dropdown-item active" href="mybooks.html">My Books</a>
-                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logout-modal">Log out</a>
+                    <a class="dropdown-item" href="mybooks.html">My Books</a>
+                    <a class="dropdown-item" href="../index.html" data-toggle="modal" data-target="#logout-modal">Log out</a>
                 </div>
             </li>
         </ul>
         <form class="form-inline mt-2 mt-md-0 d-none d-xl-block " id="search">
             <input class="form-control mr-lg-2 rounded-pill" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0 rounded-pill" type="button" onclick="location.href='search.html'">Search</button>
-        </form>
+            <button class="btn btn-outline-success my-2 my-sm-0 rounded-pill" type="button" onclick="location.href='search.html'">Search</button>        </form>
     </div>
 </nav>
 <div class="container-fluid  d-xl-none d-sm-block">
@@ -50,18 +69,15 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col text-center">
-            <p class="display-4">Upload a book</p>
-            <button class="btn  btn-outline-secondary mt-2 ml-2 rounded-pill d-lg-block d-sm-none" onclick="location.href='mybooks.html'">back</button>
-            <button class="btn btn-lg btn-outline-secondary mt-2 ml-2 rounded-pill d-lg-none d-sm-block" onclick="location.href='mybooks.html'">back</button>
+            <p class="display-4">Search Results</p>
         </div>
     </div>
-    <div class="row">
-        <div class="col mt-2 text-center">
-            <form action="">
-                <input type="file" id="book-pdf" name="book-pdf" class="btn btn-outline-info btn-block rounded-pill  "><br><br>
-                <input type="submit" class="btn btn-outline-primary rounded-pill">
-            </form>
-        </div>
+    <div class="list-group">
+        <p class="list-group-item list-group-item-action list-group-item-dark "><a href="#">Book Title</a> by <a href="Profile.html">user</a> in category [date]</p>
+        <p class="list-group-item list-group-item-action list-group-item-dark "><a href="#">Book Title</a> by <a href="Profile.html">user</a> in category [date]</p>
+        <p class="list-group-item list-group-item-action list-group-item-dark "><a href="#">Book Title</a> by <a href="Profile.html">user</a> in category [date]</p>
+        <p class="list-group-item list-group-item-action list-group-item-dark "><a href="#">Book Title</a> by <a href="Profile.html">user</a> in category [date]</p>
+        <p class="list-group-item list-group-item-action list-group-item-dark "><a href="#">Book Title</a> by <a href="Profile.html">user</a> in category [date]</p>
     </div>
 </div>
 <div class="modal fade text-dark" id="logout-modal">
