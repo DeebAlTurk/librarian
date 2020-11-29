@@ -146,8 +146,8 @@ body>#header a:hover ,#navbardrop:hover{
 }
 #catg-Carousel .carousel-item>.card-columns>.card{
 }
-#catg-Carousel .carousel-item>.card-columns>.card:hover{
-    color: #BF94E4;
+.card:hover{
+    color: #BF94E4 !important;
     transform: skewX(2deg);
 }
 #highlight-book-slider{

@@ -9,6 +9,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="icon" type="image/png" href="../resources/book.svg">
     <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .card img{
+            height: 200px;
+        }
+    </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark pb-2 sticky-top" id="header">
@@ -47,47 +52,171 @@
         </form>
     </div>
 </div>
-<div class="container-fluid">
+<div class="container-fluid d-xl-block d-sm-none">
     <div class="card-columns mt-2">
         <div class="card bg-danger">
+            <img src="../resources/icons/love.svg" alt="" class="card-img">
             <p class="card-title text-center display-1">Love</p>
             <div class="card-body text-center">
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
             </div>
-            <a class="stretched-link" href="#"></a>
+            <a class="stretched-link" href="#"  data-toggle="tooltip" title="view books"></a>
         </div>
         <div class="card bg-primary">
+            <img src="../resources/icons/location.svg" alt="" class="card-img">
+            <p class="card-title text-center display-1">Adventure</p>
             <div class="card-body text-center">
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
             </div>
-            <a class="stretched-link" href="#"></a>
+            <a class="stretched-link" href="#"  data-toggle="tooltip" title="view books"></a>
         </div>
-        <div class="card bg-primary">
+        <div class="card bg-info">
+            <img src="../resources/icons/detective-story.svg" alt="" class="card-img">
+            <p class="card-title text-center display-1">Mystery</p>
             <div class="card-body text-center">
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
             </div>
-            <a class="stretched-link" href="#"></a>
+            <a class="stretched-link" href="#"  data-toggle="tooltip" title="view books"></a>
         </div>
-        <div class="card bg-primary">
+    </div>
+    <div class="card-columns mt-2">
+        <div class="card bg-white">
+        <img src="../resources/icons/cardiogram.svg" alt="" class="card-img">
+        <p class="card-title text-center display-1 text-black-50">Heath</p>
+        <div class="card-body text-center">
+            <p class="card-text text-dark" id="health-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+        </div>
+        <a class="stretched-link" href="#"  data-toggle="tooltip" title="view books"></a>
+    </div>
+        <div class="card bg-warning">
+            <img src="../resources/icons/drama.svg" alt="" class="card-img">
+            <p class="card-title text-center display-1">Drama</p>
             <div class="card-body text-center">
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
             </div>
-            <a class="stretched-link" href="#"></a>
+            <a class="stretched-link" href="#"  data-toggle="tooltip" title="view books"></a>
         </div>
-        <div class="card bg-primary">
+        <div class="card bg-success">
+            <img src="../resources/icons/toys.svg" alt="" class="card-img">
+            <p class="card-title text-center display-1">Children</p>
             <div class="card-body text-center">
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
             </div>
-            <a class="stretched-link" href="#"></a>
+            <a class="stretched-link" href="#"  data-toggle="tooltip" title="view books"></a>
         </div>
-        <div class="card bg-primary">
+    </div>
+<div class="card-columns mt-2">
+        <div class="card bg-secondary">
+        <img src="../resources/icons/business-professional.svg" alt="" class="card-img">
+        <p class="card-title text-center display-1">Business</p>
+        <div class="card-body text-center">
+            <p class="card-text text-dark" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+        </div>
+        <a class="stretched-link" href="#"  data-toggle="tooltip" title="view books"></a>
+    </div>
+        <div class="card bg-dark">
+            <img src="../resources/icons/murderer.svg" alt="" class="card-img">
+            <p class="card-title text-center display-1">Horror</p>
             <div class="card-body text-center">
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
             </div>
-            <a class="stretched-link" href="#"></a>
+            <a class="stretched-link" href="#"  data-toggle="tooltip" title="view books"></a>
+        </div>
+        <div class="card bg-dark">
+            <img src="../resources/icons/programing.svg" alt="" class="card-img">
+            <p class="card-title text-center display-1">CS</p>
+            <div class="card-body text-center">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+            </div>
+            <a class="stretched-link" href="#"  data-toggle="tooltip" title="Computer Science"></a>
         </div>
     </div>
 
+</div>
+<div class="container-fluid d-xl-none d-sm-block">
+    <div class="card-deck mt-4">
+        <div class="card bg-danger">
+            <img src="../resources/icons/love.svg" alt="" class="card-img">
+            <p class="card-title text-center display-1">Love</p>
+            <div class="card-body text-center">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+            </div>
+            <a class="stretched-link" href="#"  data-toggle="tooltip" title="view books"></a>
+        </div>
+
+        <div class="card bg-primary">
+            <img src="../resources/icons/location.svg" alt="" class="card-img">
+            <p class="card-title text-center display-1">Adventure</p>
+            <div class="card-body text-center">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+            </div>
+            <a class="stretched-link" href="#"  data-toggle="tooltip" title="view books"></a>
+        </div>
+    </div>
+    <div class="card-deck mt-4">
+        <div class="card bg-info">
+            <img src="../resources/icons/detective-story.svg" alt="" class="card-img">
+            <p class="card-title text-center display-1">Mystery</p>
+            <div class="card-body text-center">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+            </div>
+            <a class="stretched-link" href="#"  data-toggle="tooltip" title="view books"></a>
+        </div>
+        <div class="card bg-white">
+            <img src="../resources/icons/cardiogram.svg" alt="" class="card-img">
+            <p class="card-title text-center display-1 text-black-50">Heath</p>
+            <div class="card-body text-center">
+                <p class="card-text text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+            </div>
+            <a class="stretched-link" href="#"  data-toggle="tooltip" title="view books"></a>
+        </div>
+    </div>
+    <div class="card-deck mt-4">
+        <div class="card bg-warning">
+            <img src="../resources/icons/drama.svg" alt="" class="card-img">
+            <p class="card-title text-center display-1">Drama</p>
+            <div class="card-body text-center">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+            </div>
+            <a class="stretched-link" href="#"  data-toggle="tooltip" title="view books"></a>
+        </div>
+        <div class="card bg-success">
+            <img src="../resources/icons/toys.svg" alt="" class="card-img">
+            <p class="card-title text-center display-1">Children</p>
+            <div class="card-body text-center">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+            </div>
+            <a class="stretched-link" href="#"  data-toggle="tooltip" title="view books"></a>
+        </div>
+    </div>
+    <div class="card-deck mt-4">
+        <div class="card bg-secondary">
+            <img src="../resources/icons/business-professional.svg" alt="" class="card-img">
+            <p class="card-title text-center display-1">Business</p>
+            <div class="card-body text-center">
+                <p class="card-text text-dark" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+            </div>
+            <a class="stretched-link" href="#"  data-toggle="tooltip" title="view books"></a>
+        </div>
+        <div class="card bg-dark">
+            <img src="../resources/icons/murderer.svg" alt="" class="card-img">
+            <p class="card-title text-center display-1">Horror</p>
+            <div class="card-body text-center">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+            </div>
+            <a class="stretched-link" href="#"  data-toggle="tooltip" title="view books"></a>
+        </div>
+    </div>
+    <div class="card-deck mt-4">
+        <div class="card bg-dark">
+            <img src="../resources/icons/programing.svg" alt="" class="card-img">
+            <p class="card-title text-center display-1">CS</p>
+            <div class="card-body text-center">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+            </div>
+            <a class="stretched-link" href="#"  data-toggle="tooltip" title="Computer Science"></a>
+        </div>
+    </div>
 </div>
 <footer>
     <div class="container-fluid mt-2">
