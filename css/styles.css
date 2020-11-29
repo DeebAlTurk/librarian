@@ -140,6 +140,12 @@ body>#header a:hover ,#navbardrop:hover{
     border-width: 3px;
 
 }
+#dropdownMenu-in-nav{
+    color: #BF94E4 !important;
+}
+#catg .card img{
+    height: 200px;
+}
 .social-icons img {
     width: 35px !important;
 

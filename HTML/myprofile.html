@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="icon" type="image/png" href="../resources/book.svg">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark pb-2 sticky-top" id="header">
+    <a href="Home.html" class="navbar-brand pl-2"><img class="img-fluid" src="../resources/librarian-logo/png/default-monochrome-white.png" width="200px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav mr-auto ">
+            <li class="nav-item"><a class="nav-link " href="">Home</a></li>
+            <li class="nav-item"><a class="nav-link " href="">categories</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Liked Books</a></li>
+
+            <li class="nav-item dropdown btn-group active" id="dropdownMenu-in-nav">
+            <span class="nav-link dropdown-toggle" style="cursor: pointer"  id="navbardrop" data-toggle="dropdown" >
+                My Account
+            </span>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">My Account</a>
+                    <a class="dropdown-item active" href="#">My Books</a>
+                    <a class="dropdown-item" href="#">Log out</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0 d-none d-xl-block " id="search">
+            <input class="form-control mr-lg-2 rounded-pill" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 rounded-pill" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<div class="container-fluid  d-xl-none d-sm-block">
+    <div class="row justify-content-center mx-auto my-5">
+        <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-lg-2 rounded-pill display-4" type="text" placeholder="Search" aria-label="Search" style="width: 750px;height: 150%;font-size: 25px" >
+            <button class="btn btn-outline-success my-2 my-sm-0 rounded-pill ml-2 " type="submit" id="mobile-search-btn" style="font-size: 25px; height: 150% ;">Search</button>
+        </form>
+    </div>
+</div>
+<div class="container-fluid">
+    <div>
+        <p class="text-center display-3">User Name</p>
+        <p class="text-center">Here will be a small bio entered by the user if he or she wants to enter it</p>
+    </div>
+    <div class="container-fluid">
+        <div class="card-columns">
+            <div class="card bg-primary">
+                <div class="card-body text-center">
+                    <p class="card-text">Some text inside the first card</p>
+                </div>
+            </div>
+            <div class="card bg-warning">
+                <div class="card-body text-center">
+                    <p class="card-text">Some text inside the second card</p>
+                </div>
+            </div>
+            <div class="card bg-success">
+                <div class="card-body text-center">
+                    <p class="card-text">Some text inside the third card</p>
+                </div>
+            </div>
+            <div class="card bg-danger">
+                <div class="card-body text-center">
+                    <p class="card-text">Some text inside the fourth card</p>
+                </div>
+            </div>
+            <div class="card " style="background-color: #DDA0DD">
+                <div class="card-body text-center">
+                    <p class="card-text">Some text inside the fifth card</p>
+                </div>
+            </div>
+            <div class="card bg-info">
+                <div class="card-body text-center">
+                    <p class="card-text">Some text inside the sixth card</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<footer>
+    <div class="container-fluid mt-2">
+        <div class="row">
+            <div class="col-lg-3 text-center">
+                <span class="font-weight-bolder text-white-50  d-block ">Our work is</span>
+                <code >Librarian done by Deeb Al Turk <br>
+                    in Fall 2020-2021 <br>
+                    by using Bootstrap and Laravel</code>
+            </div>
+            <div class="col-lg-3  text-center">
+                <span class="font-weight-bolder text-white-50 mb-2 d-block">Find Us</span>
+                <a href="#" class="social-icons mr-2 "><img src="../resources/icons/instagram.svg" alt="Instagram"></a>
+                <a href="#" class="social-icons mr-2"><img src="../resources/icons/facebook.svg" alt="Facebook"></a>
+                <a href="#" class="social-icons mr-2"><img src="../resources/icons/linkedin.svg" alt="LinkedIn"></a>
+            </div>
+            <!--            <div class="col-lg-3 d-xl-none d-sm-block mobile-social-icons text-center mt-3">-->
+            <!--                <span class="font-weight-bolder text-white-50  d-block">Find Us</span>-->
+            <!--                <a href="#" class="social-icons mr-3 "><img src="../resources/icons/instagram.svg" alt="Instagram"></a>-->
+            <!--                <a href="#" class="social-icons mr-3"><img src="../resources/icons/facebook.svg" alt="Facebook"></a>-->
+            <!--                <a href="#" class="social-icons mr-3"><img src="../resources/icons/linkedin.svg" alt="LinkedIn"></a>-->
+            <!--            </div>-->
+            <div class="col-lg-3">
+                <span class="font-weight-bolder text-white-50 mb-1 mr-3  text-center d-block">Contact</span>
+                <div class="text-center">
+                    <a class="social-icons mr-2" href="mailto:turkdeeb@gmail.com"><img src="../resources/icons/gmail.svg" alt="Gmail" ></a>
+                    <a  class="social-icons mr-2" href="tel:+96181792246"><img src="../resources/icons/telephone.svg" alt="Phone"></a>
+                </div>
+
+            </div>
+            <div class="col-lg-3 text-center">
+                <span class="font-weight-bolder text-white-50 mb-1 mr-3  text-center d-block">About</span>
+                <code>Designed with ❤  by Deeb Al Turk</code>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
