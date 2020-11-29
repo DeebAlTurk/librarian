@@ -47,7 +47,37 @@
         </form>
     </div>
 </div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <button class="btn  btn-outline-secondary mt-2 ml-2 rounded-pill d-lg-block d-sm-none" onclick="location.href='mybooks.html'">back</button>
+            <button class="btn btn-lg btn-outline-secondary mt-2 ml-2 rounded-pill d-lg-none d-sm-block" onclick="location.href='mybooks.html'">back</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mt-2 text-center">
+            <form action="" class="">
+                <input type="file" id="book-pdf" name="book-pdf" class="btn btn-outline-info btn-block rounded-pill  "><br><br>
+                <input type="submit" class="btn btn-outline-primary rounded-pill">
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade text-dark" id="logout-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-warning">
+                <h4 class="modal-title">Are you sure you want to logout ?</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-footer">
+                <a href="../Index.html" class="btn btn-danger" data-dismiss="modal" onclick="open()">yes</a>
+                <a  class="btn btn-outline-primary" data-dismiss="modal">no</a>
+            </div>
 
+        </div>
+    </div>
+</div>
 <footer>
     <div class="container-fluid mt-2">
         <div class="row">
