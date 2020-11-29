@@ -19,8 +19,8 @@
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav mr-auto ">
-            <li class="nav-item"><a class="nav-link " href="">Home</a></li>
-            <li class="nav-item"><a class="nav-link active" href="">categories</a></li>
+            <li class="nav-item"><a class="nav-link " href="Home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="Categories.html">categories</a></li>
             <li class="nav-item"><a class="nav-link" href="">Liked Books</a></li>
 
             <li class="nav-item dropdown btn-group" id="dropdownMenu-in-nav">
@@ -29,8 +29,8 @@
             </span>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">My Account</a>
-                    <a class="dropdown-item" href="#">My Books</a>
-                    <a class="dropdown-item" href="#">Log out</a>
+                    <a class="dropdown-item" href="mybooks.html">My Books</a>
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logout-modal">Log out</a>
                 </div>
             </li>
         </ul>
@@ -211,6 +211,21 @@
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
             </div>
             <a class="stretched-link" href="#"  data-toggle="tooltip" title="Computer Science"></a>
+        </div>
+    </div>
+</div>
+<div class="modal fade text-dark " id="logout-modal">
+    <div class="modal-dialog ">
+        <div class="modal-content ">
+            <div class="modal-header bg-warning">
+                <h4 class="modal-title">Are you sure you want to logout ?</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-footer ">
+                <a href="../Index.html" class="btn btn-danger" data-dismiss="modal" onclick="open()">yes</a>
+                <a  class="btn btn-outline-primary" data-dismiss="modal">no</a>
+            </div>
+
         </div>
     </div>
 </div>

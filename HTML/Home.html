@@ -31,7 +31,7 @@
             <div class="dropdown-menu">
                 <a class="dropdown-item" href="#">My Account</a>
                 <a class="dropdown-item" href="#">My Books</a>
-                <a class="dropdown-item" href="#">Log out</a>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logout-modal">Log out</a>
             </div>
         </li>
     </ul>
@@ -121,7 +121,7 @@
     <span class="carousel-control-next-icon"></span>
 </a>
 </div>
-<div class="container-fluid mt-5">
+<div class="container-fluid">
     <div class="row">
         <div class="col">
             <span class="text-right display-4">Love</span>
@@ -198,7 +198,7 @@
         </div>
     </div>
 </div>
-<div class="container-fluid mt-5">
+<div class="container-fluid">
     <div class="row">
         <div class="col">
             <span class="text-right display-4">Mystery</span>
@@ -275,7 +275,7 @@
         </div>
     </div>
 </div>
-<div class="container-fluid mt-5">
+<div class="container-fluid">
     <div class="row">
         <div class="col">
             <span class="text-right display-4">Health</span>
@@ -352,7 +352,7 @@
         </div>
     </div>
 </div>
-<div class="container-fluid mt-5">
+<div class="container-fluid">
     <div class="row">
         <div class="col">
             <span class="text-right display-4">Drama</span>
@@ -426,6 +426,21 @@
                 </a>
 
             </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade text-dark" id="logout-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-warning">
+                <h4 class="modal-title">Are you sure you want to logout ?</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-footer">
+                <a href="../Index.html" class="btn btn-danger" data-dismiss="modal" onclick="open()">yes</a>
+                <a  class="btn btn-outline-primary" data-dismiss="modal">no</a>
+            </div>
+
         </div>
     </div>
 </div>
