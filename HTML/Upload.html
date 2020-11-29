@@ -56,7 +56,33 @@
         </div>
     </div>
     <div class="row">
-        <div class="col mt-2 text-center">
+        <div class="col">
+            <label>Book title</label>
+            <input type="text" placeholder="Book Title " class="rounded-pill my-3"><br>
+            <label>Book cover :</label>
+            <input type="file" placeholder="Book Title " class="rounded-pill my-3"><br>
+        </div>
+    </div>
+    <div class="row ">
+      <div class="col">
+          <div class="form-group w-50 ">
+              <label>Select a category (select one):</label>
+              <select class="form-control bg-dark text-white-50" >
+                  <option>love</option>
+                  <option>Adventure</option>
+                  <option>drama</option>
+                  <option>children</option>
+                  <option>health</option>
+                  <option>computer Science</option>
+                  <option>mystery</option>
+                  <option>business</option>
+                  <option>horror</option>
+              </select>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col mt-2 text-left ">
             <form action="">
                 <input type="file" id="book-pdf" name="book-pdf" class="btn btn-outline-info btn-block rounded-pill  "><br><br>
                 <input type="submit" class="btn btn-outline-primary rounded-pill">
@@ -64,6 +90,7 @@
         </div>
     </div>
 </div>
+
 <div class="modal fade text-dark" id="logout-modal">
     <div class="modal-dialog">
         <div class="modal-content">
