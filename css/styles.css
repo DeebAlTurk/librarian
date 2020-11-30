@@ -4,6 +4,9 @@ html, body {
     margin: 0;
     height: 100%;
 }
+.bookCover{
+    width: 200px;
+}
 #login-page{
     /*background:linear-gradient(45deg, #2F1C53, #A46DFF, #F6D1FD);*/
     background-image: url("../resources/log-bg.jpg");
@@ -201,4 +204,89 @@ body>#header a:hover ,#navbardrop:hover{
     #navbardrop{
         cursor: pointer;
     }
+}
+.bookCover{
+    width: 200px !important;
+}
+#liked-books-page .mybooks{
+    background-color: #EE82EE;
+    cursor: pointer;
+}
+#liked-books-page .mybooks a ,#mybooks-page .mybooks a{
+    color: white;
+}
+#liked-books-page .mybooks a:hover ,#mybooks-page .mybooks a:hover{
+    text-decoration: none;
+}
+#liked-books-page .mybooks:hover a ,#mybooks-page .mybooks:hover a{
+    color: black;
+}
+#liked-books-page .mybooks:hover{
+    color: black !important;
+}
+#liked-books-page .myBooks-Container:nth-child(even) .card :hover{
+    background-color: #EE82EE;
+}
+#liked-books-page .myBooks-Container:nth-child(odd) .card :hover{
+    background-color: #734F96;
+}
+#liked-books-page .myBooks-Container:nth-child(even) .card{
+    background-color: #734F96;
+}
+#liked-books-page .myBooks-Container:nth-child(odd) .card{
+    background-color: #EE82EE;
+
+}
+
+#mybooks-page .mybooks{
+    background-color: #EE82EE;
+}
+#mybooks-page .mybooks:hover{
+    color: black !important;
+}
+#mybooks-page .myBooks-Container:nth-child(even) .card :hover{
+    background-color: #734F96;
+    /*background-color: #66ff00;*/
+}
+#mybooks-page .myBooks-Container:nth-child(odd) .card :hover{
+    /*background-color:#ffff00;*/
+    background-color: #DDA0DD;
+}
+#mybooks-page .myBooks-Container:nth-child(even) .card{
+    background-color: #DDA0DD;
+
+}
+#mybooks-page .myBooks-Container:nth-child(odd) .card{
+    background-color: #734F96;
+}
+
+#catg-page .card a{
+    color:  #DDA0DD !important;
+}
+#catg-page .card:hover a{
+    color:  white !important;
+}
+#search-page .list-group a{
+    color: #EE82EE !important;
+}
+#search-page .list-group a:hover{
+    color: #734F96 !important;
+}
+#search-page .list-group-item-dark:hover a{
+    color: #734F96 !important;
+}
+#search-page .list-group-item-dark:nth-child(n){
+    color: lightgray;
+    background-color: #8459ab;
+}
+#search-page .list-group-item-dark:nth-child(n):hover{
+    color: black;
+    background-color: #DDA0DD;
+}
+
+@media screen and (max-width: 1200px){
+    .bookCover{
+        width: 500px !important;
+    }
+
 }
